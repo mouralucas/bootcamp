@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.views import View
 
 
-class Dash(View):
+class ExercicioUm(View):
     def get(self, *args, **kwargs):
         """
         Criar uma requisição que retorne as informações da tabela [x] via contexto....
@@ -25,12 +25,13 @@ class Dash(View):
 
 """
 Criar um class based views que retorna o template uma lista que cada posição seja uma letra do alfabeto e
-uma segunda lista de 15 posições com numeros aleatórios, use a função for para gerar a lista aleatória
+uma segunda lista de 15 posições com numeros aleatórios entre 15 e 117, use a função for para gerar a lista aleatória
 (dica: pesquise a função Random do python para isso) 
 Cria a URL 'listas/' no arquivo dash/urls para que a função seja executado quando a URL for digitada no navegador
 
-Use a função Dash acima como referência da montagem da view. O 'context' deve conter duas chaves: 'alfabeto' para 
-envia a lista com o alfabeto e 'lista_aleatoria' para enviar a lista de numeros aleatórios
+Use a função ExercicioUm acima como referência da montagem da view. 
+O 'context' deve conter duas chaves: 'alfabeto' para 
+enviar a lista com o alfabeto e 'lista_aleatoria' para enviar a lista de numeros aleatórios
 
 A view deve chamar o template 'exercicio_dois.html'.
 """
