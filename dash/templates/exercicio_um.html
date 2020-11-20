@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste Bootcamp Inteliger</title>
+</head>
+<body>
+<div>Informações da tabela Venda</div>
+{% for i in tabela_venda %}
+    <p>{{ i }}</p>
+{% endfor %}
+<div>------------------</div>
+<br>
+<div>Informações da tabela Venda maiores que 100</div>
+{% for i in tabela_venda_maior_100 %}
+    <p>{{ i }}</p>
+{% endfor %}
+<div>------------------</div>
+
+{% if tabela_venda_maior_100_qtd %}
+    <div>A lista possui mais de 10 elementos maiores que 100</div>
+{% else %}
+    <div>A lista NÃO possui mais de 10 elementos maiores que 100</div>
+{% endif %}
+<div>------------------</div>
+
+<br>
+<div>A quantidade de valores maiores que 100 na tabela é {{ tabela_venda_maior_100_par_impar }}</div>
+
+{% for i in servicos_nome_maior_5 %}
+    <p>{{ i }}</p>
+{% endfor %}
+<div>------------------</div>
+<div>Bônus</div>
+<div>O dia atual é {{ dia }}</div>
+</body>
+</html>
